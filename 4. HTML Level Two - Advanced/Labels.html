@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and labels</title>
+</head>
+<body>
+    <h3>Sem label.</h3>
+    <form action="https://www.google.com" method="get">
+        <p>Enter e-mail:</p>
+        <input type="email" name="userEmail" placeholder="Enter your e-mail here" id="userEmail">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Com label.</h3>
+    <form>
+        <label for="userInput">Enter a text:</label>
+        <input type="text" name="inputText" id="userInput" value="Utilizando value">
+    </form>
+
+    <h3>Campos obrigatórios.</h3>
+    <form>
+        <p>Enter e-mail:</p>
+        <input type="text" name="requiredInput" placeholder="Required" id="requiredInput" required>
+        <input type="text" name="notRequiredInput" placeholder="Not required" id="notRequiredInput">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

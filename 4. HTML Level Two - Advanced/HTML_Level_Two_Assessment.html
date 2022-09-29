@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment test HTML</title>
+</head>
+<body>
+    <h1>Course sing up page</h1>
+    <p>Please note: First name, Last name, Password and E-mail are required</p>
+
+    <form action="FormsLabels.html" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="userFirstName" id="firstName" placeholder="First name" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="userLastName" id="lastName" placeholder="Last name" required><p></p>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="userEmail" id="email" placeholder="name@email.com" required>
+        <label for="password">Password:</label>
+        <input type="password" name="userPassword" id="password" placeholder="123456789" required>
+
+        <p>Are you over the age of 18?</p>
+        <input type="radio" name="age" id="over18">
+        <label for="over18">Yes.</label><br>
+
+        <input type="radio" name="age" id="under18">
+        <label for="under18">No.</label>
+
+        <p>Dou you have a credit card or Paypal?</p>
+        <select name="userPayment" id="payment">
+            <option value="CC">Credit card</option>
+            <option value="PP">Paypal</option>
+            <option value="2">Both</option>
+            <option value="0">Neither</option>
+        </select><p></p>
+
+        </a><input type="submit" value="Sing up">
+    </form>
+</body>
+</html>

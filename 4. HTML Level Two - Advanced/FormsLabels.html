@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Feedback</title>
+</head>
+<body>
+    <h1>Hotel feedback form</h1>
+
+    <form method="get">
+        <h3>Are from inside USA or outside USA?</h3>
+
+        <input type="radio" name="USAChecker" id="inUSA" value="Inside">
+        <label for="inUSA">Inside.</label><br>
+
+        <input type="radio" name="USAChecker" id="outUSA" value="Outside">
+        <label for="outUSA">Outside.</label>
+
+        <h2>How was your service?</h2>
+        <select name="stars" id="starsRating">
+            <option value="Great">★★★</option>
+            <option value="Okay">★★</option>
+            <option value="Bad">★</option>
+        </select>
+        <input type="submit" value="Submit">
+
+        <h2>Any other feedback you want to give?</h2>
+        <textarea name="userFeedback" id="feedback" cols="80" rows="10" placeholder="Enter your feedback here!"></textarea>
+        <br><input type="submit" value="Submit">
+    </form>
+</body>
+</html>
